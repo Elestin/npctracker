@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD NPC Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <button id="addNpcBtn">Add NPC</button>
+        <button id="clearNpcsBtn">Clear All NPCs</button>
+        <button id="exportNpcsBtn">Export NPCs</button>
+        <button id="importNpcsBtn">Import NPCs</button> <!-- Import button -->
+        <input type="file" id="importNpcsInput" style="display: none;">
+        <select id="sortNpcsSelect">
+            <option value="initiative-asc">Initiative Ascending</option>
+            <option value="initiative-desc">Initiative Descending</option>
+            <option value="hitPoint-asc">Hit Points Ascending</option>
+            <option value="hitPoint-desc">Hit Points Descending</option>
+        </select>
+    </div>
+    <div id="npcsContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
